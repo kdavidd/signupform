@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content-left">
+            <div class="left1">
+                <img src="images/bg.jpg" id="bg-img">
+            </div>
+            <div class="left2">
+                <div class="left-logo">
+                    <img src="images/logo.png" id="logo">
+                </div>
+                <div class="left-text">
+                    <h1 id="logo-text">FLOWERIN</h1>
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="row row-top">
+                <p>This is not a real online service! You know you need something <br>
+                like this in your life to help you realize your deepest dreams. <br>
+                Sign up <em>now</em> to get started!
+                </p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="row row-middle">
+                <h2>Let's do this!</h2>
+                <form action="http://www.google.com" method="post" id="sign-up" > <!--onsubmit="return check()"-->
+                <div class="columns">
+                    <div class="column-left">
+                        <div class="input-group">
+                            <label for="user-name">FIRST NAME</label>
+                            <input type="text" id="user-name">
+                        </div>
+                        <div class="input-group">
+                            <label for="user-email">EMAIL</label>
+                            <input type="email" id="user-email">
+                        </div>
+                        <div class="input-group">
+                            <label for="user-pw">PASSWORD</label>
+                            <input type="password" id="user-pw" required minlength="5">
+                            <span class="pass-info"></span>
+                        </div>
+                    </div>
+                    <div class="column-right">
+                        <div class="input-group">
+                            <label for="user-last-name">LAST NAME</label>
+                            <input type="text" id="user-last-name">
+                        </div>
+                        <div class="input-group">
+                            <label for="user-number">PHONE NUMBER</label>
+                            <input type="text" id="user-number">
+                        </div>
+                        <div class="input-group">
+                            <label for="user-confirm-pw">CONFIRM PASSWORD</label>
+                            <input type="password" id="user-confirm-pw" minlength="5" required>
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+            </div>
+            <div class="row row-bottom">
+                <button id="btn-submit" type="submit" form="sign-up">Create account</button>
+                <p>Already have an account? <strong><a href="#" id="log-in">Log in</a></strong></p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
